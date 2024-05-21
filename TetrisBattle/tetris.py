@@ -483,7 +483,7 @@ class Judge(object):
 
 class Tetris(object):
     def __init__(self, player, gridchoice):
-
+        random.seed(12)
         if gridchoice == "none":
             self.o_grid = [[0] * GRID_DEPTH for i in range(GRID_WIDTH)]
 
